@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>9_laba_dop</title>
+    <link rel="stylesheet" href="10stylee.css">
+</head>
+ <body>
+    <nav class="navig">
+        <div class="burger">&#9776;</div> 
+        <div class="menu nav-links">
+            <a href="#home">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="https://www.instagram.com/kastomjjunk?igsh=MTlqNmxzYzVza3p3dQ==" target="_blank">Контакты</a>
+            <a href="#reviews">Отзывы</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="video_backgr">
+            <video autoplay muted loop id="bg-video">
+                <source src="IMG_8944.MP4" type="video/mp4">
+            </video>
+        </div>
+    <div class="polyproztfon">
+        <div class="content-wrapper">
+            <div class="text">
+                <h1>Привет! Я Настя и я кастомлю вещи.</h1>
+                <div class="lala">
+                    <h2>Персонализация на каждом шагу<br>♡</h2>
+                </div>
+                <button class="contact-button" onclick="location.href='https://www.instagram.com/fevoll1?igsh=MTFyYjNuY3lmdmNsMg=='">Напиши мне</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- УВЛЕЧЕНИЯ -->
+    <section class="next-section">
+        <div class="container">
+            <section id="about">
+                <h2 align="center">Мои увлечения</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="photo_5325544505857927064_y.jpg" alt="Дост1">
+                        <div class="card-content">
+                            <h3>Чтение</h3>
+                            <p>Это одно из моих более времязатратных увлечений.<br>
+                                Любимые жанры - это детектив, ужасы, романы.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="IMG_1644.JPG" alt="Дост2">
+                        <div class="card-content">
+                            <h3>Музыка</h3>
+                            <p>Так же занимает огромную часть моего досуга с детства.<br>
+                               Почти за 19 лет я дважды училась в музыкальной школе.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="IMG_1634.PNG" alt="Дост3">
+                        <div class="card-content">
+                            <h3>Кастомизация</h3>
+                            <p>Кастомизация одежды, рисование являются способом разгрузить голову и отдохнуть.<br>
+                             Рисую я так же с детства. В 10 лет даже побывала в Дрездене на выставке работ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ТЕХНОЛОГИИ -->
+    <section id="technologies" class="technologies-section">
+        <h2 align="center" >Технологии, которыми я владею</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="IMG_2060.PNG" alt="Техн1">
+                <h3>Web-дизайн</h3>
+                <p>Пока что я только осваиваю эту технологию, но точно могу сказать, что эта технология однозначно вызывает у меня эмоции.<br>
+                 Пока не понятно какие именно.</p>
+            </div>
+            <div class="tech-card">
+                <img src="photo_5346018189756197351_x.jpg" alt="Техн2">
+                <h3>Сочетание цветов в одежде </h3>
+                <p>На самом деле в душе я стилист.<br>
+                    Можете полюбоваться на мой образ, который я сама подобрала себе в 6 классе.</p>
+            </div>
+            <div class="tech-card">
+                <img src="photo_5346018189756197352_y.jpg" alt="Техн3">
+                <h3>Технология рисования</h3>
+                <p>Кастом одежды уже был.<br>
+                 А как на счет рисования плаката на мероприятие за шоколадку?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА С ОТЗЫВАМИ -->
+    <section id="reviews">
+        <div class="reviews-container">
+            <h3>Есть что сказать о проделанной работе?</h3>
+            <p>Оставьте отзыв!</p>
+            <form action="https://getform.io/f/azyydxjb" method="POST" class="review-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Оставьте Ваше мнение" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+        
+     </section>
+    <script src="burgmenu.js"></script>
+  </body>
+</html>

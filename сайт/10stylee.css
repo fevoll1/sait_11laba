@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden; 
+}
+
+.navig {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu a {
+    color: #f3d0d0;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #f3d0d0;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 100px 20px 60px;
+}
+
+#home {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.video_backgr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.polyproztfon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 95%;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.text {
+    text-align: center;
+    margin: 100px;
+    max-width: 600px;
+    padding: 10px;
+    color: #f3d0d0;
+    z-index: 2;
+}
+
+.lala {
+    text-align: center;
+    color: #f3d0d0;
+}
+
+.card-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 35px; 
+} 
+
+.card { 
+    background-color: #eaaec4; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 375px; 
+    display: flex; 
+    flex-direction: column; 
+    transition: transform 0.6s ease;
+}
+
+.burger{
+    color: #eaaec4;
+}
+
+.card img { 
+    width: 100%; 
+    height: auto; 
+} 
+
+.card-content { 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.card:hover { 
+    transform: translateY(-20px); 
+}
+
+.next-section { 
+    padding: 50px 20px; 
+    background-color: #f1c9d8; 
+}  
+
+.next-section h2 { 
+    font-size: 35px; 
+    margin-top: 0;
+} 
+
+p {
+    text-align: start;
+    color: #000000;
+}
+
+
+/* Технологии */
+.technologies-section {
+    background-color: #e1f5fe; 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 50px 20px; 
+    text-align: center; 
+    justify-content: center;
+}
+
+.technologies-section h3 {
+    text-align: center; 
+}
+
+.tech-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.tech-card {
+    background-color: #E1EBFE;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: start;
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 350px; 
+    transition: transform 0.6s ease; 
+    margin-bottom: 20px; 
+}
+
+.tech-card img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+} 
+
+.tech-card p {
+    font-size: 1em;
+    color: #000000;
+}
+
+.tech-card:hover {
+    transform: translateY(-20px);
+}
+
+.section { 
+    padding: 80px 15px 40px; 
+} 
+
+.technologies-section h2{
+    font-size: 35px; 
+    margin-top: 0;
+}
+
+/*ОТЗЫВЫ*/
+
+#reviews {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    color: #333; 
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.reviews-container {
+    background-color: #cc878793; 
+    padding: 20px; 
+    border-radius: 5px; 
+    max-width: 600px; 
+    width: 100%; 
+    
+}
+
+.reviews-container h3 {
+    margin-bottom: 10px; 
+    color: #000000; 
+    text-align: center; 
+}
+
+.reviews-container p {
+    margin-bottom: 20px; 
+    color: #000000; 
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group input, .form-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+.submit-btn {
+    background-color: #d46060; 
+    color: #fff;
+    padding: 15px 20px; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 16px; 
+    width: 100%; 
+} 
+.reviews-container p{
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .card-container, .tech-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .tech-card {
+        width: 80%; 
+        margin: 10px 0;
+    }
+
+    .navig .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navig .burger {
+        display: block;
+    }
+
+    .navig .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .container, .section, .technologies-section {
+        padding: 80px 15px 40px;
+    }
+
+    .text {
+        margin: 30px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container, .tech-grid {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card, .tech-card {
+        width: 80%; 
+    }
+}
